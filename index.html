@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="EVIN Interior Creation - Premium apartment furniture packages and custom interior solutions in Sri Lanka.">
+<title>EVIN Interior Creation | Premium Furniture & Interiors</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#102131;--brown:#5b321f;--gold:#b4976a;--cream:#f6f2ed;--ink:#1d252b;--white:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"DM Sans",sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+img{width:100%;display:block;object-fit:cover}
+a{text-decoration:none;color:inherit}
+.container{width:min(1180px,92%);margin:auto}
+header{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,.94);backdrop-filter:blur(15px);border-bottom:1px solid #eee}
+.nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{height:56px;width:auto;object-fit:contain}
+.nav-links{display:flex;gap:28px;align-items:center;font-size:14px;font-weight:600}
+.nav-links a{transition:.25s}.nav-links a:hover{color:var(--gold)}
+.btn{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:4px;padding:13px 22px;font-weight:700;cursor:pointer;transition:.25s}
+.btn-primary{background:var(--brown);color:white}.btn-primary:hover{transform:translateY(-2px);background:#402115}
+.btn-dark{background:var(--navy);color:#fff}.btn-outline{border:1px solid var(--brown);color:var(--brown);background:transparent}
+.menu{display:none;font-size:28px;background:none;border:0}
+.hero{min-height:760px;padding-top:78px;background:linear-gradient(90deg,rgba(16,33,49,.92) 0%,rgba(16,33,49,.72) 42%,rgba(16,33,49,.15) 100%),url("assets/image-3.jpeg") center/cover;display:flex;align-items:center;color:#fff}
+.hero-content{max-width:680px;padding:80px 0}
+.eyebrow{text-transform:uppercase;letter-spacing:3px;color:#e2c48d;font-size:13px;font-weight:700;margin-bottom:18px}
+h1{font:600 clamp(42px,6vw,78px)/1.05 "Playfair Display",serif;margin-bottom:24px}
+.hero p{font-size:18px;max-width:590px;color:#f1f1f1;margin-bottom:32px}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+section{padding:95px 0}
+.section-head{text-align:center;max-width:760px;margin:0 auto 48px}
+.section-head h2{font:600 clamp(32px,4vw,50px)/1.15 "Playfair Display",serif;color:var(--navy);margin-bottom:15px}
+.section-head p{color:#66717a}
+.about{background:var(--cream)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
+.about-img{height:520px;border-radius:10px}
+.about h2{font:600 48px/1.15 "Playfair Display",serif;color:var(--navy);margin-bottom:20px}
+.about p{margin-bottom:20px;color:#5d6469}
+.packages{background:#fff}
+.package-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
+.package-card{border:1px solid #e7e0d8;border-radius:12px;overflow:hidden;background:#fff;box-shadow:0 15px 40px rgba(20,30,40,.08);transition:.3s}
+.package-card:hover{transform:translateY(-8px)}
+.package-img{height:280px}
+.package-body{padding:30px}
+.package-body h3{font:600 30px "Playfair Display",serif;color:var(--navy);margin-bottom:10px}
+.package-body p{color:#69727a;margin-bottom:18px}
+.check-list{list-style:none;display:grid;gap:10px;margin:20px 0 25px}
+.check-list li:before{content:"✓";color:var(--gold);font-weight:800;margin-right:10px}
+.price-banner{background:var(--navy);color:#fff;padding:48px;border-radius:12px;display:flex;justify-content:space-between;align-items:center;gap:25px;margin-top:35px}
+.price-banner h3{font:500 30px "Playfair Display",serif}.price{font-size:42px;font-weight:700;color:#e5c78e;white-space:nowrap}
+.features{background:var(--cream)}
+.feature-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.feature{background:#fff;padding:28px;border-radius:8px;border-top:3px solid var(--gold)}
+.feature-icon{font-size:28px;margin-bottom:12px}.feature h3{font-size:17px;margin-bottom:8px;color:var(--navy)}.feature p{font-size:14px;color:#69727a}
+.services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.service{padding:24px;border:1px solid #e7e0d8;border-radius:8px;transition:.25s}.service:hover{background:var(--navy);color:#fff;transform:translateY(-4px)}.service h3{font-size:16px}
+.custom{background:var(--cream)}
+.custom-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
+.custom-img{height:540px;border-radius:10px}
+.custom h2{font:600 48px/1.15 "Playfair Display",serif;color:var(--navy);margin-bottom:18px}
+.custom-list{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin:25px 0}.custom-list div:before{content:"◆";font-size:9px;color:var(--gold);margin-right:9px}
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.step{text-align:center;padding:25px}.step-num{width:58px;height:58px;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;margin:0 auto 18px;font-size:20px;font-weight:700}.step h3{margin-bottom:8px}.step p{color:#68737b;font-size:14px}
+.gallery{background:var(--cream)}
+.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.gallery-item{height:250px;border-radius:8px;overflow:hidden;cursor:pointer}.gallery-item img{height:100%;transition:.35s}.gallery-item:hover img{transform:scale(1.07)}
+.branches{background:#fff}.branch-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}.branch{padding:35px;background:var(--cream);border-radius:10px}.branch h3{font:600 28px "Playfair Display",serif;color:var(--navy);margin-bottom:12px}.branch p{color:#5f6870}
+.contact{background:var(--navy);color:#fff}.contact .section-head h2{color:#fff}.contact .section-head p{color:#cbd2d7}.contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:45px;align-items:start}.contact-info{display:grid;gap:18px}.contact-card{padding:22px;border:1px solid rgba(255,255,255,.15);border-radius:8px}.contact-card h3{color:#e5c78e;margin-bottom:5px}.form{background:#fff;padding:30px;border-radius:10px;color:var(--ink);display:grid;gap:15px}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:15px}.form input,.form select,.form textarea{width:100%;padding:13px;border:1px solid #ddd;border-radius:5px;font:inherit}.form textarea{min-height:120px;resize:vertical}
+footer{background:#0a151e;color:#d9dfe3;padding:50px 0 25px}.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:35px}.footer-logo{height:65px;width:auto;filter:brightness(0) invert(1);margin-bottom:15px}.footer h3{color:#e5c78e;margin-bottom:14px}.footer-links{display:grid;gap:8px;font-size:14px}.copyright{text-align:center;border-top:1px solid rgba(255,255,255,.12);padding-top:22px;margin-top:35px;font-size:13px;color:#98a3ab}
+.lightbox{position:fixed;inset:0;background:rgba(0,0,0,.9);z-index:2000;display:none;align-items:center;justify-content:center;padding:30px}.lightbox.open{display:flex}.lightbox img{max-width:92vw;max-height:88vh;width:auto;border-radius:5px}.close{position:absolute;right:25px;top:15px;color:#fff;font-size:40px;cursor:pointer}
+.reveal{opacity:0;transform:translateY(25px);transition:.7s}.reveal.show{opacity:1;transform:none}
+@media(max-width:900px){.nav-links{display:none;position:absolute;top:78px;left:0;right:0;background:#fff;padding:22px;flex-direction:column;align-items:flex-start;box-shadow:0 10px 20px #0001}.nav-links.open{display:flex}.menu{display:block}.feature-grid,.services-grid{grid-template-columns:repeat(2,1fr)}.process-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){section{padding:65px 0}.hero{min-height:680px}.about-grid,.custom-grid,.contact-grid,.branch-grid,.package-grid{grid-template-columns:1fr}.about-img,.custom-img{height:360px}.price-banner{display:block;padding:30px}.price{font-size:34px;margin:12px 0 22px}.feature-grid,.services-grid,.gallery-grid{grid-template-columns:1fr 1fr}.gallery-item{height:180px}.footer-grid{grid-template-columns:1fr}.form-row{grid-template-columns:1fr}.custom-list{grid-template-columns:1fr}h1{font-size:46px}}
+</style>
+</head>
+<body>
+<header><div class="container nav">
+<a href="#home"><img class="logo" src="assets/image-1.jpg" alt="EVIN Interior Creation Logo"></a>
+<nav class="nav-links" id="navLinks">
+<a href="#home">Home</a><a href="#packages">Packages</a><a href="#services">Services</a><a href="#custom">Custom Furniture</a><a href="#gallery">Gallery</a><a href="#branches">Branches</a><a href="#contact">Contact</a>
+</nav>
+<a class="btn btn-primary" href="#contact">Free Consultation</a>
+<button class="menu" id="menuBtn" aria-label="Open menu">☰</button>
+</div></header>
+
+<main>
+<section class="hero" id="home"><div class="container hero-content reveal">
+<div class="eyebrow">EVIN INTERIOR CREATION</div>
+<h1>Transform Your Apartment Into Your Dream Home</h1>
+<p>Premium 2-bedroom and 3-bedroom apartment furniture packages, custom-made furniture, and complete interior solutions designed for modern living.</p>
+<div class="hero-actions"><a href="#packages" class="btn btn-primary">Explore Packages</a><a href="#contact" class="btn btn-outline" style="color:#fff;border-color:#fff">Get a Free Consultation</a></div>
+</div></section>
+
+<section class="about" id="about"><div class="container about-grid">
+<img class="about-img reveal" src="assets/image-2.jpeg" alt="Modern apartment interior">
+<div class="reveal"><div class="eyebrow">ABOUT EVIN</div><h2>Beautiful Spaces. Exceptional Craftsmanship.</h2><p>At Evin Interior Creation, we specialize in creating premium interior solutions and custom furniture for homes, apartments, offices, and commercial spaces.</p><p>We combine exceptional craftsmanship, innovative designs, and high-quality materials to deliver spaces that are elegant, functional, and built to last.</p><a href="#services" class="btn btn-dark">Explore Our Services</a></div>
+</div></section>
+
+<section class="packages" id="packages"><div class="container">
+<div class="section-head reveal"><div class="eyebrow">COMPLETE FURNISHING</div><h2>2 Bedroom & 3 Bedroom Apartment Furniture Packages</h2><p>Everything you need for a stylish, comfortable, and functional home in one complete solution.</p></div>
+<div class="package-grid">
+<article class="package-card reveal"><img class="package-img" src="assets/image-3.jpeg" alt="2 bedroom apartment package"><div class="package-body"><h3>2 Bedroom Furniture Package</h3><p>Complete comfort and style for modern apartment living.</p><ul class="check-list"><li>Complete Living Room Furniture</li><li>Dining Area Furniture</li><li>Furniture for 2 Bedrooms</li><li>Modern & Functional Design</li><li>Premium Quality Materials</li><li>Professional Delivery & Installation</li></ul><a href="#contact" class="btn btn-primary">Request a Quotation</a></div></article>
+<article class="package-card reveal"><img class="package-img" src="assets/image-4.jpeg" alt="3 bedroom apartment package"><div class="package-body"><h3>3 Bedroom Furniture Package</h3><p>Elegant and complete furnishing for spacious family living.</p><ul class="check-list"><li>Complete Living Room Furniture</li><li>Dining Area Furniture</li><li>Furniture for 3 Bedrooms</li><li>Elegant & Premium Finishes</li><li>High-Quality Materials</li><li>Professional Delivery & Installation</li></ul><a href="#contact" class="btn btn-primary">Request a Quotation</a></div></article>
+</div>
+<div class="price-banner reveal"><div><h3>Complete Apartment Furniture Packages</h3><p>Premium solutions designed to transform your entire apartment.</p></div><div><div class="price">Starting From LKR 1.6 Million</div><a href="#contact" class="btn btn-primary">Get Your Free Quotation</a></div></div>
+</div></section>
+
+<section class="features"><div class="container"><div class="section-head reveal"><div class="eyebrow">THE EVIN DIFFERENCE</div><h2>Why Choose Evin Interior Creation?</h2></div><div class="feature-grid">
+<div class="feature reveal"><div class="feature-icon">✦</div><h3>Premium Quality Furniture</h3><p>High-quality furniture designed for lasting beauty and performance.</p></div>
+<div class="feature reveal"><div class="feature-icon">⌂</div><h3>Durable Materials</h3><p>Reliable materials and quality construction techniques.</p></div>
+<div class="feature reveal"><div class="feature-icon">▣</div><h3>Complete Solution</h3><p>From design to manufacturing, delivery, and installation.</p></div>
+<div class="feature reveal"><div class="feature-icon">✧</div><h3>Modern Designs</h3><p>Contemporary furniture solutions designed for modern lifestyles.</p></div>
+<div class="feature reveal"><div class="feature-icon">⌘</div><h3>Customizable</h3><p>Every project can be customized to your taste, space, and budget.</p></div>
+<div class="feature reveal"><div class="feature-icon">₨</div><h3>Excellent Value</h3><p>Premium quality and exceptional craftsmanship at competitive prices.</p></div>
+<div class="feature reveal"><div class="feature-icon">✓</div><h3>Professional Installation</h3><p>Experienced teams ensure professional installation and finishing.</p></div>
+<div class="feature reveal"><div class="feature-icon">♡</div><h3>After-Sales Support</h3><p>We continue to support our customers after project completion.</p></div>
+</div></div></section>
+
+<section id="services"><div class="container"><div class="section-head reveal"><div class="eyebrow">WHAT WE DO</div><h2>Our Services</h2><p>Complete turnkey solutions tailored to your style, needs, and budget.</p></div><div class="services-grid">
+<div class="service reveal"><h3>Apartment Furniture Packages</h3></div><div class="service reveal"><h3>Custom-Made Furniture</h3></div><div class="service reveal"><h3>Kitchen Pantry Cupboards</h3></div><div class="service reveal"><h3>Wooden Doors & Windows</h3></div><div class="service reveal"><h3>Wall Paneling</h3></div><div class="service reveal"><h3>Wooden Flooring</h3></div><div class="service reveal"><h3>Office Furniture & Workstations</h3></div><div class="service reveal"><h3>TV Units & Entertainment Centers</h3></div><div class="service reveal"><h3>Wardrobes & Bedroom Furniture</h3></div><div class="service reveal"><h3>Dining Tables & Living Room Furniture</h3></div><div class="service reveal"><h3>Reception Counters</h3></div><div class="service reveal"><h3>Interior Design & Space Planning</h3></div>
+</div></div></section>
+
+<section class="custom" id="custom"><div class="container custom-grid"><img class="custom-img reveal" src="assets/image-12.jpeg" alt="Custom furniture"><div class="reveal"><div class="eyebrow">MADE FOR YOU</div><h2>Custom Furniture Solutions</h2><p>We design and manufacture custom-made furniture to match your style, space, and lifestyle. Your design, our craftsmanship, your dream space.</p><div class="custom-list"><div>Sofas & Sectional Sofas</div><div>Dining Tables & Sets</div><div>Coffee & Side Tables</div><div>Office Tables & Workstations</div><div>TV Units</div><div>Bedroom Furniture</div><div>Wardrobes</div><div>Kitchen Cupboards</div><div>Bookshelves & Cabinets</div><div>Reception Counters</div><div>Hotel & Commercial Furniture</div><div>Any Custom Furniture</div></div><a href="#contact" class="btn btn-primary">Start Your Custom Project</a></div></div></section>
+
+<section><div class="container"><div class="section-head reveal"><div class="eyebrow">HOW IT WORKS</div><h2>Our Simple Process</h2></div><div class="process-grid">
+<div class="step reveal"><div class="step-num">01</div><h3>Consultation</h3><p>Discuss your requirements, ideas, lifestyle, and budget.</p></div>
+<div class="step reveal"><div class="step-num">02</div><h3>Design & Planning</h3><p>Our team develops a suitable design and furniture solution.</p></div>
+<div class="step reveal"><div class="step-num">03</div><h3>Manufacturing</h3><p>Skilled craftsmen create your furniture using quality materials.</p></div>
+<div class="step reveal"><div class="step-num">04</div><h3>Delivery & Installation</h3><p>We professionally deliver and install your furniture.</p></div>
+</div></div></section>
+
+<section class="gallery" id="gallery"><div class="container"><div class="section-head reveal"><div class="eyebrow">OUR WORK</div><h2>Furniture & Interior Gallery</h2><p>Click any image to view it in full size.</p></div><div class="gallery-grid">
+<div class="gallery-item reveal"><img src="assets/image-5.jpeg" alt="TV unit"></div><div class="gallery-item reveal"><img src="assets/image-6.jpeg" alt="Wardrobe"></div><div class="gallery-item reveal"><img src="assets/image-7.jpeg" alt="Coffee table"></div><div class="gallery-item reveal"><img src="assets/image-8.jpeg" alt="Sofa set"></div><div class="gallery-item reveal"><img src="assets/image-9.jpeg" alt="Sideboard"></div><div class="gallery-item reveal"><img src="assets/image-10.jpeg" alt="Modern cabinet"></div><div class="gallery-item reveal"><img src="assets/image-11.jpeg" alt="Dining table"></div><div class="gallery-item reveal"><img src="assets/image-12.jpeg" alt="Storage furniture"></div><div class="gallery-item reveal"><img src="assets/image-13.jpeg" alt="Modern cabinet"></div><div class="gallery-item reveal"><img src="assets/image-14.jpeg" alt="Bed furniture"></div>
+</div></div></section>
+
+<section class="branches" id="branches"><div class="container"><div class="section-head reveal"><div class="eyebrow">VISIT US</div><h2>Our Branches</h2><p>Visit our nearest branch to explore our premium furniture collections and customized interior solutions.</p></div><div class="branch-grid">
+<div class="branch reveal"><h3>Panadura Branch</h3><p>📍 No. 8/1, Nadee Mawatha,<br>Egodauyana, Moratuwa,<br>Sri Lanka</p></div>
+<div class="branch reveal"><h3>Kandy Branch</h3><p>📍 No. 20, Abilmigama,<br>Pilimathalawa, Kandy,<br>Sri Lanka</p></div>
+</div></div></section>
+
+<section class="contact" id="contact"><div class="container"><div class="section-head reveal"><div class="eyebrow">LET'S CREATE</div><h2>Ready to Create Your Dream Space?</h2><p>Contact Evin Interior Creation for a free consultation and quotation.</p></div><div class="contact-grid">
+<div class="contact-info reveal"><div class="contact-card"><h3>Call Us</h3><p>0720520626 / 0777572408</p></div><div class="contact-card"><h3>WhatsApp</h3><p>+94 72 052 0626</p></div><div class="contact-card"><h3>Website</h3><p>evininterior.lk</p></div><div class="contact-card"><h3>Instagram</h3><p>@evin.interior.cre</p></div></div>
+<form class="form reveal" id="contactForm"><div class="form-row"><input required placeholder="Full Name"><input required type="tel" placeholder="Phone Number"></div><div class="form-row"><input required type="email" placeholder="Email Address"><select required><option value="">Select Service</option><option>2 Bedroom Furniture Package</option><option>3 Bedroom Furniture Package</option><option>Custom Furniture</option><option>Interior Design</option><option>Other</option></select></div><textarea required placeholder="Tell us about your project..."></textarea><button class="btn btn-primary" type="submit">Send Inquiry</button><p id="successMsg" style="display:none;color:#39734a;font-weight:700">Thank you! Your inquiry has been received. Our team will contact you soon.</p></form>
+</div></div></section>
+</main>
+
+<footer><div class="container"><div class="footer-grid"><div><img class="footer-logo" src="assets/image-1.jpg" alt="EVIN Interior Creation"><p>Crafting Beautiful Spaces with Quality, Innovation, and Excellence.</p></div><div><h3>Quick Links</h3><div class="footer-links"><a href="#home">Home</a><a href="#packages">Packages</a><a href="#services">Services</a><a href="#custom">Custom Furniture</a></div></div><div><h3>Contact</h3><div class="footer-links"><span>0720520626</span><span>0777572408</span><span>evininterior.lk</span><span>Panadura & Kandy Branches</span></div></div></div><div class="copyright">© 2026 EVIN Interior Creation. All Rights Reserved.</div></div></footer>
+
+<div class="lightbox" id="lightbox"><span class="close" id="closeLightbox">&times;</span><img id="lightboxImg" alt="Gallery image"></div>
+<script>
+const menuBtn=document.getElementById('menuBtn'),navLinks=document.getElementById('navLinks');
+menuBtn.addEventListener('click',()=>navLinks.classList.toggle('open'));
+document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>navLinks.classList.remove('open')));
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+const lightbox=document.getElementById('lightbox'),lightboxImg=document.getElementById('lightboxImg');
+document.querySelectorAll('.gallery-item img').forEach(img=>img.addEventListener('click',()=>{lightboxImg.src=img.src;lightbox.classList.add('open')}));
+document.getElementById('closeLightbox').onclick=()=>lightbox.classList.remove('open');
+lightbox.onclick=e=>{if(e.target===lightbox)lightbox.classList.remove('open')};
+document.getElementById('contactForm').addEventListener('submit',e=>{e.preventDefault();document.getElementById('successMsg').style.display='block';e.target.reset()});
+</script>
+</body>
+</html>
